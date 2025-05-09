@@ -1,0 +1,53 @@
+.event-box {
+    border: 2px solid #F56B9A;
+    border-radius: 6px;
+    width: 220px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #231f42;
+  }
+  
+  .event-total-price {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #F56B9A;
+    color: white;
+  }
+  
+  .event-sek {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-left: 0.3rem;
+  }
+  
+  .event-quantity-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid #F56B9A;
+    background-color: #231f42;
+  }
+  
+  .event-quantity-wrapper > *:not(:last-child) {
+    border-right: 2px solid #F56B9A;
+  }
+  
+  .event-quantity-wrapper button,
+  .event-quantity-wrapper div {
+    padding: 0.75rem 0;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #231f42;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .event-quantity-wrapper div {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  

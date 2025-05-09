@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+One&display=swap');
+.order-box {
+  border: 2px solid #F56B9A;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #231f42;
+}
+
+.order-info {
+  font-family: 'Sansita One', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.75rem 0 0.25rem;
+  color: #F56B9A;
+}
+
+.order-details {
+  font-size: 0.875rem; /* 14px */
+  color: #37AEAB;
+  padding-bottom: 0.75rem;
+}
+
+.order-quantity-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 2px solid #F56B9A;
+  background-color: #231f42;
+}
+
+.order-quantity-wrapper button {
+  padding: 0.75rem 0;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #231f42;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.order-quantity-wrapper div {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #231f42;
+}
+
+.order-quantity-wrapper > *:not(:last-child) {
+  border-right: 2px solid #F56B9A;
+}
+
+.order-quantity-wrapper button:first-child {
+  border-bottom-left-radius: 6px;
+}
+.order-quantity-wrapper button:last-child {
+  border-bottom-right-radius: 6px;
+}

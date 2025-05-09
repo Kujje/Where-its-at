@@ -1,0 +1,52 @@
+.order-container {
+  max-width: 500px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #231f42;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: calc(100vh - 60px);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.order-title {
+  font-family: 'Sansita One', cursive;
+  font-size: 1.8rem;
+  color: #F56B9A;
+  margin-bottom: 2rem;
+}
+
+.order-total-label {
+  color: #ccc;
+  font-size: 1.1875rem; 
+  margin-top: 2rem;
+}
+
+.order-total-price {
+  font-size: 2rem; 
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.order-submit-btn {
+  background-color: #37AEAB;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.375rem; 
+  cursor: pointer;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 3rem;
+}
+
+.order-empty {
+  color: #bbb;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
