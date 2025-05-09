@@ -1,12 +1,23 @@
-# React + Vite
+# Where-its-at
+Externa bibliotek 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+För att få väl godkänt skulle vi själva välja tre externa bibliotek som inte behandlats i undervisningen. Jag valde tre stycken som jag tyckte kändes både rimliga och användbara för en sån här applikation. Här är de jag valde och varför:
 
-Currently, two official plugins are available:
+1. uuid
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Det här biblioteket används för att skapa unika ID:n, vilket jag behövde när jag genererade biljetter. Ursprungligen fanns det en manuell funktion för att slumpa ID, men uuid är både säkrare och smidigare. Det gör att varje biljett får en egen unik kod utan att man behöver tänka på att något ska krocka eller bli dubbelt.
 
-## Expanding the ESLint configuration
+Användning: I useStore.js när biljetterna skapas i generateTickets().
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. react-icons
+
+Detta bibliotek använder jag i bottennavigeringen (Navbar) för att lägga till ikoner för Home, Events och Tickets. Istället för att ladda ner egna bilder eller svg-filer kunde jag snabbt lägga in snygga och enhetliga ikoner direkt i koden. Det hjälpte mig att få ett mer proffsigt gränssnitt utan så mycket extra jobb.
+
+Användning: I Navbar.jsx med ikonerna FaHome, FaCalendarAlt och FaTicketAlt.
+
+3. react-confetti
+
+Jag ville göra biljettsidan lite roligare, så jag la till en konfettianimation när man slutfört sitt köp. Det ger lite mer känsla av att man faktiskt "vunnit" något och avslutar flödet med en visuell bekräftelse. Biblioteket var enkelt att använda och passade in perfekt på sidan.
+
+Användning: I TicketPage.jsx för att visa konfetti när biljetterna visas.
+
